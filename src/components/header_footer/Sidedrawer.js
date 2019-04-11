@@ -4,31 +4,32 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List'; 
 import ListItem from '@material-ui/core/ListItem';
 
- const Sidedrawer = (props) => {
+ const SideDrawer = (props) => {
   return (
      <Drawer  anchor="right" 
               open={props.open}
               onClose={()=> props.onClose(false) } >
+            
             <List component="nav">
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> console.log('Event Starts in')}>
                   Event Starts in
                 </ListItem>
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> console.log('Venue Info')}>
                  Venue Info
                 </ListItem>
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> console.log('HighLights')}>
                   HighLights
                 </ListItem>
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> console.log('Pricing')}>
                   Pricing
                 </ListItem>
-                <ListItem button onClick={()=> console.log('Featured')}>
+                <ListItem button onClick={()=> console.log('Location')}>
                   Location
-                </ListItem>
+                </ListItem>                
             </List>
 
       
      </Drawer>
   )
 }
-export default  Sidedrawer
+export default  SideDrawer
