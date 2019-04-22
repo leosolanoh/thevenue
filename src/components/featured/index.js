@@ -8,11 +8,11 @@ const Featured = () => {
     <div style={{position:'relative'}} >      
         <Carrousel/>
 
-        <div className="artist_name">
-            <div className="wrapper">
-                Ariana Grande
-            </div>
-        </div>
+          <div className="artist_name">
+              <div className="wrapper">
+                <div className='f1_title'>Formula 1</div>
+              </div>
+          </div>
 
       <Countdown />
         
